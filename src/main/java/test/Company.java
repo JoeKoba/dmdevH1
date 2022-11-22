@@ -1,4 +1,4 @@
-package test.entity;
+package test;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,15 +12,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "users")
-public class User {
-
+public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String name;
-    private String lastName;
-    private int age;
-    @Column(name = "company_id")
     private int companyId;
+    private String name;
+
 }
