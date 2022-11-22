@@ -17,13 +17,15 @@ public class Runner {
             session.beginTransaction();
 
             User user = User.builder()
-                    .name("Joe")
-                    .lastName("Cocker")
-                    .age((byte) 20)
+                    .name("john")
+                    .lastName("lenon")
+                    .age((byte) 200)
                     .build();
             session.save(user);
 
             session.getTransaction().commit();
         }
+
+
     }
 }
